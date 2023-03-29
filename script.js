@@ -26,4 +26,8 @@ function userPrompt(){
                 computerWin++;
             }
             alert("User wins: " + userWin + "\nComputer Wins: " + computerWin + "\nTies: " + tie)
+            var playAgain = confirm("Do you want to play again?")
+            if(playAgain) {
+                userPrompt();
+            }
         }
